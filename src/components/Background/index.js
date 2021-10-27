@@ -23,7 +23,7 @@ const Background = () => {
       if (vantaEffect) vantaEffect.destroy();
     };
   }, [vantaEffect]);
-  return <div ref={myRef}>Foreground content goes here</div>;
+  return <div className="vanta-container" ref={myRef}></div>;
 };
 
 export default Background;
