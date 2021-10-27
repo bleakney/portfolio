@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import FOG from "vanta/dist/vanta.fog.min";
 // import stylesheet and fonts
 import './styles.scss';
@@ -38,10 +39,18 @@ function App() {
   }, [vantaEffect]);
 
   return (
+    <Router>
   <div className="vanta-container" ref={myRef}>
     <Nav />
+    <Switch>
+      {/* <Route exact path="/" component={Home} /> */}
+      <Route exact path="/work" component={Work} />
+      {/* <Route exact path="/about" component={About} />
+      <Route exact path="/contact" component={Contact} /> */}
+    </Switch>
 
   </div>
+  </Router>
   );
 }
 
