@@ -1,10 +1,12 @@
 // import stylesheet
 import './styles.scss';
+import Background from './components/Background';
 
 function App() {
   return (
-    <>
-    </>
+    <Background>
+
+    </Background>
   );
 }
 
