@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect, useRef } from "react";
+import FOG from "vanta/dist/vanta.fog.min";
 // import stylesheet and fonts
 import './styles.scss';
 import WebFont from 'webfontloader';
 //import components
-import Background from './components/Background';
+import Nav from './components/Nav';
+
 
 function App() {
   // import google fonts
@@ -14,11 +16,32 @@ function App() {
       }
     })
   })
+  const [vantaEffect, setVantaEffect] = useState(0);
+  const myRef = useRef(null);
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        FOG({
+          el: myRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          baseColor: 0xd00ff,
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, [vantaEffect]);
 
   return (
-    <Background>
+  <div className="vanta-container" ref={myRef}>
+    <Nav />
 
-    </Background>
+  </div>
   );
 }
 
