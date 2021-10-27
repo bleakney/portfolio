@@ -1,6 +1,52 @@
+// FONT VARIABLES
+$serif: "Playfair Display", serif;
+$sans-serif: "Montserrat", sans-serif;
+// COLOR VARIABLES
+$light: rgb(248, 241, 240);
+$red: rgb(219, 69, 69);
+
+// RESET
 * {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.vanta-container {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+nav {
+  font-family: $sans-serif;
+  color: $light;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    margin-left: 2rem;
+    text-shadow: -1px 1px $red;
+    font-size: 1.75rem;
+  }
+  h1:hover {
+    text-shadow: 1px 1px $red;
+    cursor: pointer;
+  }
+
+  .navlinks-container {
+    display: flex;
+    text-align: right;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-right: 2rem;
+
+    .navlink-margin {
+      margin-right: 3rem;
+    }
+  }
+  .nav-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    text-shadow: 1px -0.5px $red;
+  }
 }
