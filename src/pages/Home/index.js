@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Work () {
+function Home () {
     
     return (
         <div>
-this is the work page
+
         </div>
     )
 };
 
-export default Work;
+export default Home;

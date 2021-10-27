@@ -6,7 +6,10 @@ import './styles.scss';
 import WebFont from 'webfontloader';
 //import components
 import Nav from './components/Nav';
-
+import Home from "./pages/Home";
+import Work from './pages/Work';
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   // import google fonts
@@ -43,10 +46,10 @@ function App() {
   <div className="vanta-container" ref={myRef}>
     <Nav />
     <Switch>
-      {/* <Route exact path="/" component={Home} /> */}
+      <Route exact path="/" component={Home} />
       <Route exact path="/work" component={Work} />
-      {/* <Route exact path="/about" component={About} />
-      <Route exact path="/contact" component={Contact} /> */}
+      <Route exact path="/about" component={About} />
+      <Route exact path="/contact" component={Contact} />
     </Switch>
 
   </div>

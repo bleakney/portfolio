@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Work () {
+function About () {
     
     return (
         <div>
-this is the work page
+this is the about page
         </div>
     )
 };
 
-export default Work;
+export default About;

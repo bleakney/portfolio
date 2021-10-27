@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Work () {
+function Contact () {
     
     return (
         <div>
-this is the work page
+this is the contact page
         </div>
     )
 };
 
-export default Work;
+export default Contact;
