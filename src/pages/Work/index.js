@@ -1,11 +1,10 @@
 import React from 'react';
+import WorkSection from '../../components/WorkSection';
 
 function Work () {
     
     return (
-        <div>
-this is the work page
-        </div>
+        <WorkSection />
     )
 };
 
