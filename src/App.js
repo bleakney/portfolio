@@ -21,12 +21,12 @@ function App() {
     })
   })
   const [vantaEffect, setVantaEffect] = useState(0);
-  const myRef = useRef(null);
+  // const myRef = useRef(null);
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
         FOG({
-          el: myRef.current,
+          el: "#root",
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
@@ -43,7 +43,7 @@ function App() {
 
   return (
     <Router>
-  <div className="vanta-container" ref={myRef}>
+  <div className="vanta-container">
     <Nav />
     <Switch>
       <Route exact path="/" component={Home} />
