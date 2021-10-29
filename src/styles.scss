@@ -11,8 +11,8 @@ $red: rgb(219, 69, 69);
   padding: 0;
 }
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .vanta-container {
@@ -56,17 +56,59 @@ nav {
 }
 
 section {
-    padding-top: 4rem;
+  padding-top: 4rem;
+}
+
+// HOME STYLES
+.jumbotron-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.trail-text {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  color: $light;
+  font-family: $serif;
+  font-size: 5rem;
+  font-weight: 800;
+  text-shadow: -1px 1px $red;
+  letter-spacing: -0.05em;
+  will-change: transform, opacity;
+  overflow: hidden;
+  margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.trail-text > div {
+    padding-right: 0.05em;
+    overflow: hidden;
+}
+
+.trail-container {
+    display: flex;
+    align-items: center;
+}
+
+.pointer-symbol {
+    color: $light;
+    font-size: 5rem;
+    margin-right: 4rem;
+    margin-left: 0;
 }
 
 .work-section {
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    img {
-        width: 35vw;
-        height: auto;
-        // filter: grayscale(75%);
-        // -webkit-filter: grayscale(75%);
-    }
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  img {
+    width: 35vw;
+    height: auto;
+    // filter: grayscale(75%);
+    // -webkit-filter: grayscale(75%);
+  }
 }
