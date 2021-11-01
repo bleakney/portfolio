@@ -16,7 +16,7 @@ export default function Jumbotron() {
   //   });
   const [open, setOpen] = useState(true);
   return (
-    <section className={`jumbotron-container`} onClick={() => setOpen(state => !state)}>
+    <section className='jumbotron-container' onClick={() => setOpen(state => !state)}>
         <JumboTronTrail items={text} open={open} />
 
       {/* {text.map((text, i) => (
