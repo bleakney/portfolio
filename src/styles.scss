@@ -70,11 +70,11 @@ section {
 .trail-text {
   position: relative;
   width: 100%;
-  height: 80px;
+  height: 90px;
   line-height: 80px;
   color: $light;
   font-family: $serif;
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 800;
   text-shadow: -1px 1px $red;
   letter-spacing: -0.05em;
@@ -101,14 +101,46 @@ section {
     margin-left: 0;
 }
 
+
+// WORK SECTION STYLES 
 .work-section {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
-  img {
-    width: 35vw;
-    height: auto;
+//   img {
+//     width: 35vw;
+//     height: auto;
     // filter: grayscale(75%);
     // -webkit-filter: grayscale(75%);
-  }
+//   }
 }
+
+.project-page-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.svg-container {
+    display: flex;
+    justify-content: center;
+}
+
+.svg-animated {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    height: 90vh;
+    width: 100%
+
+}
+
+.project-title-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    // h2 {
+    //     text-align: center;
+    // }
+  }
+
