@@ -1,5 +1,5 @@
-import React, { useState, createRef, useEffect } from "react";
-import {useSpring, animated, config } from 'react-spring';
+import React, { useState } from "react";
+import {useSpring, animated } from 'react-spring';
 
 function WorkDoodleSvg () {
 const [flip, set ] = useState(false);
@@ -8,7 +8,7 @@ const { x } = useSpring({
     reverse: flip,
     from: { x: 0 },
     x: 1,
-    delay: 1000,
+    delay: 100,
     config: {mass: 10, tension: 150, friction: 1500},
     onRest: () => set(!flip),
 })
