@@ -54,6 +54,10 @@ nav {
     cursor: pointer;
     text-shadow: 1px -0.5px $red;
   }
+  .navlink-active {
+      text-decoration: underline;
+      text-shadow: 1px -0.5px $red;
+  }
 }
 
 // HOME STYLES
