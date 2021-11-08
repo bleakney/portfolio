@@ -5,7 +5,7 @@ export default function Jumbotron() {
   const text = [
     "hi there. welcome to my website.",
     "i'm a former advertising creative", 
-    "turned UI/UX engineer.",
+    "turned frontend engineer.",
     "here's some stuff i made.",
     "i hope you like it.",
   ];
