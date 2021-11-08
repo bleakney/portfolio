@@ -31,7 +31,7 @@ export default function Trail(props) {
           </animated.div>
         ))}
       </div>
-      <Link to="/work">
+      <Link to="/portfolio/work">
         {" "}
         <animated.span style={spring} className="pointer-symbol">
           &#9758;
