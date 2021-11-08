@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect} from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import FOG from "vanta/dist/vanta.fog.min";
 // import stylesheet and fonts
@@ -9,7 +9,7 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Work from "./pages/Work";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
+// import Contact from "./pages/Contact";
 
 function App() {
   // set up nav state
