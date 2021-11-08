@@ -1,36 +1,41 @@
-import React from 'react';
-import { ParallaxLayer } from '@react-spring/parallax';
-import WorkDoodleSvg from '../WorkDoodleSvg';
+import React from "react";
+import { ParallaxLayer } from "@react-spring/parallax";
+import WorkDoodleSvg from "../WorkDoodleSvg";
 // import styles from './styles.module.css';
 
-export default function ProjectPage ({ offset, gradient, onClick }) {
+export default function ProjectPage({ offset, onClick }) {
+  const projectImages = [
+    "./images/free-maps.png",
+    "./images/movie-date.png",
+    "./images/broadcastr.png",
+  ];
+  const projectTitles = ["Free Maps", "Movie Date", "broadcastr"];
 
-    const projectImages = ['./images/free-maps.png', './images/movie-date.png', './images/broadcastr.png'];
-    const projectTitles = ['Free Maps', 'Movie Date', 'broadcastr'];
-
-   
-return (
+  return (
     <div className="project-page-container">
-        <ParallaxLayer offset={offset} speed={0.6}>
-            <div className="svg-container centered" >
-                <WorkDoodleSvg /> 
-            </div>
-            </ParallaxLayer>
-<ParallaxLayer offset={offset}>
-    <div className="project-image-container centered">
-<img className="project-page-image" src={projectImages[offset]} />
-<div className="project-title-container">
-        <h1>{projectTitles[offset]}</h1>
+      <ParallaxLayer className="parallax-layer" offset={offset} onClick={onClick} speed={0.6}>
+        <div className="svg-container centered">
+          <WorkDoodleSvg />
         </div>
-</div>
-</ParallaxLayer>
-    <ParallaxLayer offset={offset} speed={0.1}>
-       
-    </ParallaxLayer>
+      </ParallaxLayer>
+      <ParallaxLayer className="parallax-layer" offset={offset} onClick={onClick}>
+        <div className="project-image-container centered">
+          <img className="project-page-image" alt={projectTitles[offset]} src={projectImages[offset]} />
+          <div className="project-title-container">
+            <h1>{projectTitles[offset]}</h1>
+          </div>
+        </div>
+      </ParallaxLayer>
+      {/* <ParallaxLayer offset={offset} onClick={onClick}> */}
+          {/* <div className="project-arrow-container">
+          <h1 onClick={onClick}>          	
+&#8250;
+          </h1>
+          </div> */}
+      {/* </ParallaxLayer> */}
     </div>
-);
-};
-
+  );
+}
 
 /* <ParallaxLayer offset={offset} speed={0.2} onClick={onClick} >
         <div className={styles.slopeBegin} />

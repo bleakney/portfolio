@@ -126,10 +126,20 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   grid-template-rows: auto;
+  margin-top: 1rem;
+
+  h1 {
+    font-family: $sans-serif;
+    color: $light;
+    text-shadow: 2px -1px $red;
+    text-align: center;
+    font-size: 4rem;
+  }
 }
 
-// .project-page-container {
 
+// .project-page-container {
+ 
 // }
 // .svg-container {
 //    grid-column: 2;
@@ -137,13 +147,27 @@ nav {
 //    grid-row: 1;
 // }
 
+.parallax-arrows-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60vh;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  h1:hover {
+    cursor: pointer;
+  }
+}
+
 .svg-animated {
   // display: flex;
   // align-self: center;
   // justify-self: center;
-  height: 90vh;
+  height: 80vh;
   width: 100%;
 }
+
+
 
 .project-image-container {
   display: flex;
