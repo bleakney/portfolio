@@ -18,8 +18,9 @@ export default function Trail(props) {
   const spring = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
-    delay: 4000,
+    delay: 2000,
   });
+
   return (
     <div className="trail-container">
       <div>
@@ -31,11 +32,14 @@ export default function Trail(props) {
           </animated.div>
         ))}
       </div>
-      <Link to="/portfolio/work">
+      <Link to="/portfolio/work" className="enter-button-container">
+      <div>
         {" "}
-        <animated.span style={spring} className="pointer-symbol">
+        <animated.p style={spring} className="pointer-symbol">
           &#9758;
-        </animated.span>{" "}
+        </animated.p>{" "}
+        <animated.p style={spring} className="pointer-symbol-text">ENTER SITE</animated.p>
+        </div>
       </Link>
     </div>
   );
