@@ -26,13 +26,6 @@ export default function ProjectPage({ offset, onClick }) {
           </div>
         </div>
       </ParallaxLayer>
-      {/* <ParallaxLayer offset={offset} onClick={onClick}> */}
-          {/* <div className="project-arrow-container">
-          <h1 onClick={onClick}>          	
-&#8250;
-          </h1>
-          </div> */}
-      {/* </ParallaxLayer> */}
     </div>
   );
 }
