@@ -47,7 +47,7 @@ function App() {
       if (vantaEffect) vantaEffect.destroy();
     };
   }, [vantaEffect]);
-
+  
   return (
     <Router>
       <div className="vanta-container">
