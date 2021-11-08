@@ -4,7 +4,7 @@ $sans-serif: "Montserrat", sans-serif;
 // COLOR VARIABLES
 $light: rgb(248, 241, 240);
 $red: rgb(219, 69, 69);
-$blue: rgb(46,16,220);
+$blue: rgb(46, 16, 220);
 
 // RESET
 * {
@@ -55,8 +55,8 @@ nav {
     text-shadow: 1px -0.5px $red;
   }
   .navlink-active {
-      text-decoration: underline;
-      text-shadow: 1px -0.5px $red;
+    text-decoration: underline;
+    text-shadow: 1px -0.5px $red;
   }
 }
 
@@ -107,14 +107,13 @@ nav {
   color: $light;
   font-size: 5rem;
   text-align: center;
-  line-height: .75;
+  line-height: 0.75;
 }
 
 .pointer-symbol-text {
   text-align: center;
   font-family: $sans-serif;
   color: $light;
-
 }
 
 // WORK SECTION STYLES
@@ -137,9 +136,8 @@ nav {
   }
 }
 
-
 // .project-page-container {
- 
+
 // }
 // .svg-container {
 //    grid-column: 2;
@@ -163,16 +161,15 @@ nav {
   // display: flex;
   // align-self: center;
   // justify-self: center;
-  height: 80vh;
+  height: 90vh;
   width: 100%;
 }
-
-
 
 .project-image-container {
   display: flex;
   align-items: center;
   flex-direction: column;
+  // line-height: .5;
   //   img {
   // grid-column: 2;
   // grid-row: 1;
@@ -183,6 +180,7 @@ nav {
     height: auto;
     filter: grayscale(75%);
     -webkit-filter: grayscale(75%);
+   
     // grid-column: 2;
   }
 
@@ -198,7 +196,42 @@ nav {
     color: $light;
     text-shadow: 1px -0.5px $red;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
+
+  }
+}
+
+.project-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem;
+  .svg-link-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid $light;
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    img {
+      width: auto;
+      height: 1rem;
+      filter: invert(85%) sepia(2%) saturate(1024%) hue-rotate(315deg)
+        brightness(115%) contrast(94%);
+    }
+    h4 {
+      font-family: $sans-serif;
+      font-weight: 400;
+      color: $light;
+      text-shadow: 1px -0.5px $red;
+      font-size: 1rem;
+      margin-left: 0.25rem;
+    }
+  }
+  .svg-link-container:hover {
+    background-color: rgba(69, 53, 163, 0.25);
+    cursor: pointer;
   }
 }
 
@@ -232,7 +265,7 @@ nav {
     align-items: center;
     flex-direction: column;
     .social-links-container {
-        margin-top: 1rem;
+      margin-top: 1rem;
       display: flex;
       align-items: center;
       width: 100%;
@@ -243,12 +276,12 @@ nav {
       align-items: center;
       border: 1px solid $light;
       border-radius: 25px;
-      padding: .5rem;
+      padding: 0.5rem;
       img {
         width: auto;
         height: 1rem;
-        filter: invert(97%) sepia(81%) saturate(180%) hue-rotate(293deg)
-          brightness(102%) contrast(94%);
+        filter: invert(85%) sepia(2%) saturate(1024%) hue-rotate(315deg)
+          brightness(115%) contrast(94%);
       }
       h4 {
         font-family: $sans-serif;
@@ -256,12 +289,12 @@ nav {
         color: $light;
         text-shadow: 1px -0.5px $red;
         font-size: 1rem;
-        margin-left: .25rem;
+        margin-left: 0.25rem;
       }
     }
 
     .svg-link-container:hover {
-        background-color: rgba(46,16,220, .25);
+      background-color: rgba(46, 16, 220, 0.25);
     }
   }
 
