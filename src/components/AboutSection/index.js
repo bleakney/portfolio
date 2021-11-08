@@ -9,9 +9,9 @@ export default function AboutSection () {
             <div className="about-image-container">
                 <img src="./images/me.jpg" alt="headshot" style={{"borderRadius": "50%"}}/>
                 <div className="social-links-container">
-                <a className="svg-link-container" href="https://github.com/bleakney"><img src="./images/svg/github.svg" alt="linkedIn" /></a>
-                <a className="svg-link-container" href="https://linkedin.com/in/bleakney-bissett"><img src="./images/svg/linkedin.svg" alt="linkedIn" /></a>
-                <a className="svg-link-container" href="mailto:bleakneybissett@gmail.com"><img src="./images/svg/envelope.svg" alt="linkedIn" /></a>
+                <a className="svg-link-container" href="https://github.com/bleakney"><img src="./images/svg/github.svg" alt="github profile" /></a>
+                <a className="svg-link-container" href="https://linkedin.com/in/bleakney-bissett"><img src="./images/svg/linkedin.svg" alt="linkedIn profile" /></a>
+                <a className="svg-link-container" href="mailto:bleakneybissett@gmail.com"><img src="./images/svg/envelope.svg" alt="email me" /></a>
                 </div>
             </div>
             <div style={{"width": "40%"}}>
