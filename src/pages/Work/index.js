@@ -6,7 +6,6 @@ function Work () {
     const fadeIn = useSpring({
         from: { opacity: 0 },
         to: { opacity: 1},
-        delay: 500
     });
 
     
